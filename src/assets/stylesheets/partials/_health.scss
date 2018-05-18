@@ -1,0 +1,155 @@
+@import "_variables.scss";
+.section-health {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-image: url(../images/health-banner.jpg);
+    min-height: 1000px;
+    background-color: white;
+    background-size: cover;
+}
+
+.table-outer {
+    width: 1400px;
+    padding: 0 17px;
+    margin: 0 auto;
+    padding-top: 873px;
+    .first-tr td {
+        padding-top: 45px
+    }
+    tr td:first-child {
+        padding-left: 30px
+    }
+    tr {
+        th:first-child {
+            padding-left: 20px;
+        }
+        th:last-child {
+            text-align: right;
+            padding-right: 30px
+        }
+    }
+    tr {
+        td:last-child {
+            text-align: right;
+            padding-right: 60px
+        }
+    }
+    tr:last-child td {
+        padding-bottom: 37px;
+    }
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    background: rgba(225, 222, 224, 0.5);
+}
+
+td {
+    font-weight: 400;
+    font-size: 14px;
+}
+
+th,
+td {
+    text-align: left;
+    padding: 8px;
+}
+
+tr td:first-child {
+    text-decoration: underline
+}
+
+th {
+    padding: 19px 12px 17px;
+    font-size: 16px;
+    font-weight: 900;
+    background-color: #e1dee0;
+    border-bottom: 3px solid #b6c4c8;
+    color: #364143;
+    text-transform: uppercase
+}
+
+.mobile-table {
+    display: none;
+    margin-top: 581px;
+    text-align: left;
+    padding-left: 44px;
+    float: left;
+    .subtile {
+        color: white;
+        text-transform: uppercase;
+        font-size: 24px;
+        font-family: Roboto-Black;
+        padding-bottom: 28px;
+    }
+    .plan-item-title {
+        color: #2f393b;
+        font-size: 14px;
+        font-family: Roboto-Black;
+        text-transform: uppercase;
+    }
+}
+.plan-block {
+    padding-bottom: 42px;
+}
+.plan-item {
+    padding-bottom: 10px;
+    p {
+        color: #000000;
+        font-size: 14px;
+        padding-bottom: 4px;
+    }
+}
+.mobile-table-innner {
+    .plan-block:last-child {
+        padding-bottom: 0;
+    }
+}
+@media only screen and (max-width: 1450px) {
+    .table-outer {
+        width: 100%
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .table-outer {
+        padding-top: 473px;
+    }
+}
+
+@media only screen and (max-width: 850px) {
+    .table-outer {
+        padding-top: 390px;
+    }
+    .section-health {
+        min-height: 781px;
+        background-image: url(../images/health-banner-780.jpg);
+    }
+}
+
+@media only screen and (max-width: 600px) { 
+    .table-outer {
+        display: none
+    }
+    .mobile-table {
+        display: block
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .section-health {
+        background-image: url(../images/health-banner-480.jpg);
+        min-height: 780px;
+    }
+}
+
+@media only screen and (max-width: 360px) {
+    .section-health {
+        background-image: url(../images/health-banner-360.jpg);
+        min-height: 584px;
+    }
+    .mobile-table { 
+        margin-top: 424px;
+    }
+}
