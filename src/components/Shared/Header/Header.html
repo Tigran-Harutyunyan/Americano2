@@ -1,0 +1,31 @@
+<header data-scroll-index="1">
+    <nav class="nav-bar">
+        <div class="logo"></div>
+        <ul class="nav sidemenu">
+            <li v-for="(item, index) in links">
+                <a class="menu-item" @click="changeRoute(item)" :class="{'active-link': item.active}" href="javascript:void(0)">{{item.title}}</a>
+            </li> 
+        </ul>
+    </nav>
+    <!--MOBILE DROPDOWN-->
+
+  <!--   <span class="hamburger-box">
+        <span class="hamburger-inner"></span>
+    </span> -->
+    <div class="hamburger hamburger--slider">
+        <div class="hamburger-box">
+            <div class="hamburger-inner"></div>
+        </div>
+    </div>
+
+    <div class="overlay" id="overlay">
+        <nav class="overlay-menu">
+            <ul>
+                <li v-for="(item, index) in links">
+                    <a class="menu-item" @click="changeRoute(item)" :class="{'active-link': item.active}" href="javascript:void(0)">{{item.title}}</a>
+                </li> 
+            </ul>
+        </nav>
+    </div>
+    <!--MOBILE DROPDOWN-->
+</header>

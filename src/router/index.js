@@ -5,26 +5,26 @@ import HealthPlan from '../components/HealthPlan/HealthPlan.vue'
 import Members from '../components/Members/Members.vue'
 import Contacts from '../components/Contacts/Contacts.vue' 
 Vue.use(Router)
-
+  
 export default new Router({
   routes: [{
       path: '/',
-      name: 'Home',
+      name: 'home',
       component: Home
     },
     {
       path: '/health-plan',
-      name: 'HealthPlan',
+      name: 'plan',
       component: HealthPlan
     },
     {
       path: '/members',
-      name: 'Members',
+      name: 'members',
       component: Members
     },
     {
       path: '/contacts',
-      name: 'Contacts',
+      name: 'contacts',
       component: Contacts
     } 
   ]

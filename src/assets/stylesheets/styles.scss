@@ -66,14 +66,7 @@ button {
     text-align: left;
     margin: 0;
 }
-label.error {
-    color: red;
-    font-size: 12px;
-    padding-bottom: 5px;
-}
-.form-control.error{
-    border-color: red;
-}
+
 @media all and (max-width: 1400px) {
     .container {
         width: 100%

@@ -1,0 +1,12 @@
+<form class="contact-form" name="contact_form"  
+    v-on:submit.prevent="onSubmit" 
+    @submit="$v.email.$touch();$v.message.$touch();">
+    <input  class="form-control"  type="email" placeholder="Your email" name="contact_email"
+        v-model="email"  
+        :class="{'has-error': $v.email.$error}">
+    <textarea cols="30" rows="10"  name="contact_message" class="form-control"    placeholder="Your message" 
+        v-model="message"  
+        :class="{'has-error': $v.message.$error}">
+    </textarea>
+    <input type="submit" class="btn-submit btn-link" value="Submit">
+</form>

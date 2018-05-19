@@ -1,2 +1,1 @@
-<template src="./HealthPlan.html"></template> 
-<script src="./HealthPlan.js"></script>
+<template src="./HealthPlan.html"></template>

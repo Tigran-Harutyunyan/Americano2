@@ -8,8 +8,8 @@
 
 <script>
 import style from "./assets/stylesheets/styles.scss";
-import Header from './components/Header/Header.vue';
-import Footer from './components/Footer/Footer.vue'
+import Header from './components/Shared/Header/Header.vue';
+import Footer from './components/Shared/Footer/Footer.vue'
 
 export default {
   name: 'App',

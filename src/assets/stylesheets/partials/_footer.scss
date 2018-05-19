@@ -22,7 +22,14 @@
         margin-top: 11px;
     }
 }
-
+label.error {
+    color: red;
+    font-size: 12px;
+    padding-bottom: 5px;
+}
+.form-control.has-error{
+    border-color: red;
+}
 .btn-submit {
     -webkit-appearance: none;
     background-color: transparent;
@@ -35,9 +42,12 @@
         color: white
     }
 }
-
+.form-control[type="email"] { 
+   margin-bottom: 6px
+}
 .form-control {
     -webkit-appearance: none;
+    font-family: Roboto;
     font-size: 14px;
     font-weight: 300;
     color: #364143;
