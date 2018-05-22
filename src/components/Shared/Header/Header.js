@@ -36,6 +36,7 @@ export default {
   watch: {
     '$route' (to, from) { 
       this.checkLinks(to.name);
+      scroll(0,0);
     }
   },
   methods: {
