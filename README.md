@@ -1,6 +1,6 @@
 # americo
 
-> great project
+> Promising  project
 
 ## Build Setup
 

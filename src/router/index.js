@@ -4,6 +4,7 @@ import Home from '../components/Home/Home.vue'
 import HealthPlan from '../components/HealthPlan/HealthPlan.vue'
 import Members from '../components/Members/Members.vue'
 import Contacts from '../components/Contacts/Contacts.vue' 
+import AboutUs from '../components/AboutUs/AboutUs.vue' 
 Vue.use(Router)
   
 export default new Router({
@@ -26,6 +27,11 @@ export default new Router({
       path: '/contacts',
       name: 'contacts',
       component: Contacts
-    } 
+    },
+    {
+      path: '/about',
+      name: 'about',
+      component: AboutUs
+    }  
   ]
 })
