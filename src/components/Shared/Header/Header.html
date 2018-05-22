@@ -7,18 +7,14 @@
             </li> 
         </ul>
     </nav>
-    <!--MOBILE DROPDOWN-->
-
-  <!--   <span class="hamburger-box">
-        <span class="hamburger-inner"></span>
-    </span> -->
-    <div class="hamburger hamburger--slider">
+    <!--MOBILE DROPDOWN--> 
+    <div class="hamburger hamburger--slider" @click="isBurgerOpen=!isBurgerOpen" :class="{'is-active':isBurgerOpen}">
         <div class="hamburger-box">
             <div class="hamburger-inner"></div>
         </div>
     </div>
 
-    <div class="overlay" id="overlay">
+    <div class="overlay" id="overlay" v-show="isBurgerOpen">
         <nav class="overlay-menu">
             <ul>
                 <li v-for="(item, index) in links">

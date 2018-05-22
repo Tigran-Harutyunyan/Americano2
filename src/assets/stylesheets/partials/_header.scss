@@ -161,10 +161,8 @@ $color-active: #fff;
 
 .overlay {
     position: fixed;
-    top: 0;
-    opacity: 1;
-    visibility: hidden;
-    background: #000000;
+    top: 40px; 
+    background: #fff;
     z-index: 50;
     width: 225px;
     height: 362px;
@@ -296,7 +294,34 @@ $color-active: #fff;
     border-radius: 0;
     height: 2px;
 } 
+.hamburger--slider.is-active {
+    .hamburger-inner::after { 
+        top: 20px;
+    }
+    .hamburger-inner::before {
+        top: 9px;
+    }
+    .hamburger-box {
+        top: 5px;
+    }
+} 
 
+.hamburger--slider {
+    .hamburger-box {
+        top: 10px
+    }
+    .hamburger-inner {
+        top: 7px;
+    }
+    .hamburger-inner::before {
+        top: 5px;
+    }
+    .hamburger-inner::after {
+        top: 10px;
+    }
+}
+ 
+ 
 @keyframes fadeInRight {
     0% {
         opacity: 0;

@@ -3,6 +3,7 @@ export default {
   data() {
     return {
       currentRoute: "",
+      isBurgerOpen: false,
       links: [{
           id: 'home',
           title: 'Home',
