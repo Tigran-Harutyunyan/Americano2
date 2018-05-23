@@ -162,32 +162,29 @@ $color-active: #fff;
 .overlay {
     position: fixed;
     top: 40px; 
-    background: #fff;
+    background: rgba(255, 255, 255, .8);
     z-index: 50;
-    width: 225px;
-    height: 362px;
+    width: 245px;
+    height: 345px;
     right: 0;
+    *::selection {
+        background:transparent;
+    }
+    
+    *::-moz-selection {
+        background:transparent;
+    }
+    
+    *::-webkit-selection {
+        background:transparent;
+    }
     .call-us-block {
         opacity: 0
     }
-    &.open {
-        .call-us-block {
-            margin: 361px auto 72px;
-            position: relative;
-            width: 136px;
-            transition: opacity 0.2s linear 0.9s;
-            opacity: 1;
-        }
-        .callus-ico {
-            margin-right: 11px
-        }
-        .callus-ico,
-        .callButton {
-            display: inline-block !important
-        }
+    &.open { 
         opacity: 1;
         visibility: visible;
-        box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+        //box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
         &:before {
             left: 0;
         }
@@ -223,7 +220,7 @@ $color-active: #fff;
     nav {
         position: relative;
         height: 0;
-        top: 66px;
+        top: 18px;
         transform: translateY(-50%);
         text-align: center;
         z-index: 100;
@@ -236,17 +233,24 @@ $color-active: #fff;
             height: 100%;
             li {
                 display: block;
-                min-height: 55px;
+                min-height: 44px;
                 position: relative;
                 text-align: left;
+                text-align: center; 
                 opacity: 0;
                 a {
                     display: block;
                     position: relative;
-                    color: #fff;
-                    font-size: 18px;
+                    color: #2f393b;
+                    font-size: 16px;
                     text-decoration: none;
                     overflow: hidden;
+                    font-family: Roboto;
+                    text-transform: uppercase;
+                    font-weight: 500;
+                    &:hover {
+                        color:#55abc4
+                    }
                 }
                 .active-link {
                     color: $hover;
@@ -406,5 +410,15 @@ $color-active: #fff;
     }
     #top-nav {
         display: none
+    }
+}
+
+@media only screen and (max-width: 380px) { 
+    .overlay {
+        width: 100%;
+        height: 100%;
+        .nav ul{
+            padding-top: 90px;
+        }
     }
 }

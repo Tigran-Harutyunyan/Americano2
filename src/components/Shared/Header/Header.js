@@ -48,7 +48,8 @@ export default {
       this.links.forEach(link => {
         link.active =  link.id == param;
       });
-      this.$router.push({name: param})
+      this.$router.push({name: param});
+      this.isBurgerOpen = false;
     }
   },
   mounted() {  

@@ -13,24 +13,9 @@
             <div class="footer-block-2">
                 <h5 class="sub-title">Our website</h5>
                 <ul>
-                    <li>
-                        <a href="">Home</a>
-                    </li>
-                    <li>
-                        <a href="">ABOUT US</a>
-                    </li>
-                    <li>
-                        <a href="">CAREERS</a>
-                    </li>
-                    <li>
-                        <a href="">CONTACT US</a>
-                    </li>
-                    <li>
-                        <a href="">MEMBERS & GUESTS</a>
-                    </li>
-                    <li>
-                        <a href="">Health plans</a>
-                    </li>
+                    <li v-for="(item, index) in links">
+                        <a @click="changeRoute(item)" :class="{'active-link': item.active}" href="javascript:void(0)">{{item.title}}</a>
+                    </li> 
                 </ul>
             </div>
             <div class="contact-form">

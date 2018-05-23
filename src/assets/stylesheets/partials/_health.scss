@@ -1,11 +1,7 @@
 @import "_variables.scss";
-.section-health {
-    background-position: center center;
-    background-repeat: no-repeat;
+.section-health { 
     background-image: url(../images/health-banner.jpg);
-    min-height: 1000px;
-    background-color: white;
-    background-size: cover;
+    min-height: 1000px; 
 }
 
 .table-outer {
@@ -142,6 +138,9 @@ th {
         background-image: url(../images/health-banner-480.jpg);
         min-height: 780px;
     }
+    .pre-footer-spacer {
+        height: 45px;   
+    }
 }
 
 @media only screen and (max-width: 360px) {
@@ -149,6 +148,8 @@ th {
         background-image: url(../images/health-banner-360.jpg);
         min-height: 584px;
     }
+  
+    
     .mobile-table { 
         margin-top: 424px;
     }

@@ -1,6 +1,6 @@
 <header data-scroll-index="1">
     <nav class="nav-bar">
-        <div class="logo"></div>
+        <a href="/#/"><div class="logo"></div></a>
         <ul class="nav sidemenu">
             <li v-for="(item, index) in links">
                 <a class="menu-item" @click="changeRoute(item)" :class="{'active-link': item.active}" href="javascript:void(0)">{{item.title}}</a>
@@ -14,7 +14,7 @@
         </div>
     </div>
 
-    <div class="overlay" id="overlay" v-show="isBurgerOpen">
+    <div class="overlay" id="overlay" v-show="isBurgerOpen" :class="{'open': isBurgerOpen}">
         <nav class="overlay-menu">
             <ul>
                 <li v-for="(item, index) in links">

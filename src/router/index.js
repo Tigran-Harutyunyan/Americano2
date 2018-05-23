@@ -5,6 +5,7 @@ import HealthPlan from '../components/HealthPlan/HealthPlan.vue'
 import Members from '../components/Members/Members.vue'
 import Contacts from '../components/Contacts/Contacts.vue' 
 import AboutUs from '../components/AboutUs/AboutUs.vue' 
+import Careers from '../components/Careers/Careers.vue' 
 Vue.use(Router)
   
 export default new Router({
@@ -32,6 +33,11 @@ export default new Router({
       path: '/about',
       name: 'about',
       component: AboutUs
-    }  
+    } ,
+    {
+      path: '/careers',
+      name: 'careers',
+      component: Careers
+    }   
   ]
 })

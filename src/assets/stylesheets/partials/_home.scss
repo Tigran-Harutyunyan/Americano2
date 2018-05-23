@@ -1,96 +1,123 @@
-
-.section-home {
-    background-position: center center;
-    background-image: url(../images/home-banner.jpg);  
-    .about {
-        clear: both;
-        padding-top: 344px;
-        padding-right: 50px;
-        .sub-title{
-            font-size: 30px;
-            padding-bottom: 20px
-        }
-        .par-2.reg-paragraph{
-            margin-bottom: 7px;
-            margin-top: 54px;
-        }
-        .par-3.reg-paragraph{
-            margin-bottom: 5px;
-            margin-top: 16px;
-        }
-        .par-4.reg-paragraph{
-            padding-top: 38px;
-        } 
-        .reg-paragraph.par-5 {
-            margin-top: 1px;
-            margin-bottom: 24px;
-        }
-        .reg-paragraph {
-            margin-bottom: 17px;
-        }
-        .left{
-            padding-left: 100px;
-            .logo {
-                width: 380px;
-                padding-top: 210px;
-            }
-        }
-        .right{
-            width: 685px;
-            float: right;
-        }
+.section-home { 
+  background-image: url(../images/home-banner.jpg);
+  min-height: 1767px;   
+  .about {
+    clear: both;
+    padding-top: 344px;
+    padding-right: 50px;
+    display: flex;
+    .sub-title {
+      font-size: 30px;
+      padding-bottom: 20px
     }
+    .par-2.reg-paragraph {
+      margin-bottom: 7px;
+      margin-top: 54px;
+    }
+    .par-3.reg-paragraph {
+      margin-bottom: 5px;
+      margin-top: 16px;
+    }
+    .par-4.reg-paragraph {
+      padding-top: 38px;
+    }
+    .reg-paragraph.par-5 {
+      margin-top: 1px;
+      margin-bottom: 24px;
+    }
+    .reg-paragraph {
+      margin-bottom: 17px;
+    }
+    .left {
+      padding-left: 100px;
+      .logo {
+        width: 380px;
+        padding-top: 210px;
+      }
+    }
+    .right {
+      width: 685px;
+      float: right;
+    }
+  }
+}
+.banner-inner {
+    float: left; 
 }
 .par-regular.reg-paragraph {
-    opacity: 1;
+  opacity: 1;
 }
+
 .banner-description {
-    text-align: left;
-    p {
-        font-size: 60px;
-        font-family: inherit;
-        font-weight: 300;
-        margin: 0;
-        padding-bottom: 4px;
-    }
-    .bolded {
-        font-weight: 900
-    }
+  text-align: left;
+  p {
+    font-size: 60px;
+    font-family: inherit;
+    font-weight: 300;
+    margin: 0;
+    padding-bottom: 4px;
+  }
+  .bolded {
+    font-weight: 900
+  }
 }
+
 .banner-info {
-    float: left;
-    margin-top: 450px;
-    margin-left: 50px;
-    .btn-link  {
-        width: 260px;
-    }
+  float: left;
+  margin-top: 450px;
+  margin-left: 50px;
+  .btn-link {
+    width: 260px;
+  }
 }
+
 .btn-link {
-    color: $color1;
-    display: block;
-    border: 2px solid $color1;
-    font-size: 14px;
-    padding: 15px 20px 14px;
-    text-decoration: none;
-    border-radius: 2px;
-    &:hover {
-        background: $color1;
-        color: white
-    }
+  color: $color1;
+  display: block;
+  border: 2px solid $color1;
+  font-size: 14px;
+  padding: 15px 20px 14px;
+  text-decoration: none;
+  border-radius: 2px;
+  &:hover {
+    background: $color1;
+    color: white
+  }
 }
+
 .btn-places {
-    display: inline-flex;
-    padding-top: 27px;
-    .btn-link:first-child {
-        margin-right: 10px;
-    } 
+  display: inline-flex;
+  padding-top: 27px;
+  .btn-link:first-child {
+    margin-right: 10px;
+  }
 }
 
 ul {
-    list-style-type: none;
-    text-align: left;
-    padding:0;
-    a {
-        text-decoration: none
+  list-style-type: none;
+  text-align: left;
+  padding: 0;
+  a {
+    text-decoration: none
+  }
+}
+@media only screen and (max-width: 1260px) {
+    .section-home .about .right {
+        float: none;
+        clear: both;
+        margin: 0 auto
+    }
+}
+
+@media only screen and (max-width: 873px) {
+    .section-home { 
+        background-image: url(../images/home-banner-830.jpg);
+        min-height: 1443px
+    }
+}
+@media only screen and (max-width: 360px) {
+    .section-home { 
+        background-image: url(../images/home-banner-360.jpg);
+        min-height: 595px
     }
 }
